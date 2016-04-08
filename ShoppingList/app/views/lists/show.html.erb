@@ -1,0 +1,19 @@
+
+<div class="container">
+<p id="notice"><%= notice %></p>
+<div class="well">
+<h3> <%= @list.Name %></h3>
+
+
+<div id="items_wrapper">
+  <%= render "items/item" %>
+  <hr>
+  <div id="form">
+    <%= render "items/form" %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>
+</div>
+  </div>d

@@ -1,0 +1,7 @@
+<%= form_for([@list, @list.items.build])do |f| %>
+      <div class="form-group">
+        <%= f.text_field :name, placeholder: "New Item" %></div>
+    <%= f.hidden_field :list_id  %>
+    </div>
+    <%= f.submit %>
+  <% end %>

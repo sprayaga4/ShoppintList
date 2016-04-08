@@ -1,0 +1,11 @@
+<ul>
+  <% @list.items.each do |item| %>
+
+      <li>
+      <%= item.name %> ( <%= link_to 'Delete', list_item_path(list_id: item.list_id, id: item.id), :method => :delete,
+                  data: { confirm: 'Are you sure?' } %> )
+      </li>
+
+  <% end %>
+
+</ul>

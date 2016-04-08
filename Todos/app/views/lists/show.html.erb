@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @list.activity %>
+</p>
+
+<p>
+  <strong>Alarm:</strong>
+  <%= @list.alarm %>
+</p>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>
